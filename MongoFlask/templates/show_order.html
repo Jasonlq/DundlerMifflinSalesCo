@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+      <table border = 1>
+         <thead>
+            <td>Order No</td>
+            <td>Month</td>
+            <td>Customer ID</td>
+            <td>Product ID</td>
+            <td>Quantity Ordered</td>
+
+         </thead>
+
+         {%for obj in rows%}
+            <tr>
+               <td> {{obj['ono']}}</td>
+               <td>{{ obj['month']}}</td>
+               <td>{{obj['custido']}}</td>
+               <td> {{obj['prido']}}</td>
+                <td> {{obj['qo']}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+
+
+</body>
+</html>

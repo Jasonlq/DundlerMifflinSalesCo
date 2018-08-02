@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+   <body>
+
+      <table border = 1>
+         <thead>
+            <td>Customer ID</td>
+            <td>Customer Name</td>
+            <td>Age</td>
+            <td>Gender</td>
+            <td>City</td>
+            <td>Phone</td>
+            <td>Date</td>
+         </thead>
+
+         {%for obj in rows%}
+            <tr>
+               <td> {{obj['cid']}}</td>
+               <td>{{ obj['cname']}}</td>
+               <td>{{obj['age']}}</td>
+               <td> {{obj['gender']}}</td>
+               <td>{{obj['city']}}</td>
+               <td> {{obj['phone']}}</td>
+               <td> {{obj['date']}}</td>
+
+
+            </tr>
+         {% endfor %}
+      </table>
+
+
+
+   </body>
+</html>
